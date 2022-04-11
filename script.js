@@ -5,7 +5,7 @@ let linha = "<br>";
 
 function dataCurta() {
   let data = new Date();
-  let dd = data.getDay();
+  let dd = data.getDate();
   let mm = data.getMonth();
   let aaaa = data.getFullYear();
   let h = data.getHours();
@@ -14,6 +14,7 @@ function dataCurta() {
   if (dd <= 9) {
     dd = "0" + dd;
   }
+  
   if (mm <= 9) {
     mm = "0" + mm;
   }
@@ -24,9 +25,29 @@ function dataCurta() {
   if (m <= 9) {
     m = "0" + m;
   }
-  return dd + "/" + mm + "/" + aaaa + " - " + h + ":" + m;
+return dd + "/" + mm + "/" + aaaa + " - " + h + ":" + m;
 }
 
+
+  // if (dd.toString.length == 1) {
+  //   dd = "0" + dd;
+  // }
+  // if (mm.toString.length == 1) {
+  //   mm = "0" + mm;
+  // }
+  // if (aaaa.toString.length == 1) {
+  //   aaaa = "0" + aaaa;
+  // }
+  // if (h.toString.length == 1) {
+  //   h = "0" + h;
+  // }
+  // if (m.toString.length == 1) {
+  //   m = "0" + m;
+  
+  // }
+  // return dd + "/" + mm + "/" + aaaa + " - " + h + ":" + m;
+
+  
 let poupanca = {
   saldo: 0,
   movimentacao: [],
